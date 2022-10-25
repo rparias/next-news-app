@@ -4,18 +4,17 @@ import PageLayout from '../components/PageLayout'
 import styles from '../styles/Home.module.css'
 
 export default function Home({articles}) {
-  console.log(articles);
   return (
     <PageLayout>
       <div className={styles.container}>
         {articles.length === 0 && <p>There are no articles</p>}
         {articles.length > 0 && articles.map((article, index) => (
           <article key={index}>
-            <img 
+            <Image 
               src={article.urlToImage} 
               alt={`Image for the article ${article.title}`}
-              width={300}
-              height={169}
+              width={375}
+              height={210}
               />
             <h2>{article.title}</h2>
             <p>{article.description}</p>
