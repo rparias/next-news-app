@@ -1,7 +1,10 @@
+import PageLayout from "../components/PageLayout"
 
 const About = () => {
   return (
-    <div>About</div>
+    <PageLayout>
+      <div>About</div>
+    </PageLayout>
   )
 }
 
